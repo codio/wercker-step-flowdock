@@ -1,5 +1,5 @@
 name: flowdock-notify
-version: 1.0.0
+version: 1.0.1
 description: Send success or failure notifications to a Flowdock team inbox.
 keywords:
   - notification
@@ -8,9 +8,9 @@ properties:
   token:
     type: string
     required: true
-  from-address:
+  from_address:
     type: string
-    default: wercker
+    required: true
   on:
     type: string
     default: always

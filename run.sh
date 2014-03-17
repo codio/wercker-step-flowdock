@@ -46,7 +46,7 @@ SUBJECT="$APPLICATION: $STEP_NAME of $BRANCH by $STARTED_BY $RESULT $RESULT."
 CONTENT="<p>Step <strong>$STEP_NAME</strong> failed.</p><p>Commit ID: $COMMIT_ID. Message:</p><pre>$STEP_MESSAGE</pre>"
 
 
-FORMATTED_MESSAGE="{\"source\": \"$SOURCE\", \"from_address\": \"$WERCKER_FLOWDOCK_NOTIFY_FROM_ADDRESS\", \"subject\": \"$SUBJECT\", \"project\": \"$APPLICATION\", \"link\": \"$LINK\", \"content\": \"$CONTENT\"}"
+FORMATTED_MESSAGE="{\"source\": \"$SOURCE\", \"from_address\": \"$WERCKER_FLOWDOCK_NOTIFY_FROM_ADDRESS\", \"subject\": \"$SUBJECT\", \"project\": \"$WERCKER_APPLICATION_NAME\", \"link\": \"$LINK\", \"content\": \"$CONTENT\"}"
 
 API_URL="https://api.flowdock.com/v1/messages/team_inbox/$WERCKER_FLOWDOCK_NOTIFY_TOKEN"
 
