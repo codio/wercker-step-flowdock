@@ -1,0 +1,16 @@
+name: flowdock-notify
+version: 1.0.0
+description: Send success or failure notifications to a Flowdock team inbox.
+keywords:
+  - notification
+  - flowdock
+properties:
+  token:
+    type: string
+    required: true
+  from-address:
+    type: string
+    default: wercker
+  on:
+    type: string
+    default: always
