@@ -30,8 +30,8 @@ STEP_MESSAGE="$_WERCKER_FAILED_STEP_DISPLAY_MESSAGE"
 
 SOURCE="Wercker"
 PROJECT="$APPLICATION"
-LINK="https://app.wercker.com/applications/$WERCKER_BUILD_ID"
 APPLICATION=$(echo "$WERCKER_APPLICATION_NAME" | sed 's/[^a-zA-Z0-9_ ]//g')
+LINK="https://app.wercker.com/$WERCKER_APPLICATION_OWNER_NAME/$APPLICATION/runs/build/$WERCKER_BUILD_ID"
 SUBJECT="$APPLICATION: $STEP_NAME of $BRANCH by $STARTED_BY $RESULT."
 CONTENT="<p>Step <strong>$STEP_NAME</strong> $RESULT.</p><p>Commit ID: $COMMIT_ID. Message:</p><pre>$STEP_MESSAGE</pre>"
 

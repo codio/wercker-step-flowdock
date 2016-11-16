@@ -1,5 +1,5 @@
 name: flowdock-notify
-version: 1.0.3
+version: 1.0.4
 description: Send success or failure notifications to a Flowdock team inbox.
 keywords:
   - notification
